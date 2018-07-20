@@ -1,0 +1,227 @@
+.form-style-8{
+    font-family: 'Open Sans Condensed', arial, sans;
+    /*max-width: 50%;*/
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    
+
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+ }
+.form-style-8 h2{
+    background: #2ec0c7d9;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    text-align: center;
+    margin: -30px -30px 30px -30px;
+}
+
+/*
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select 
+{
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}*/
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+
+.form-style-8 input[type="button"]:hover
+{
+    background-color: gray;
+}
+.form-style-8 input[type="submit"]:hover {
+    /*background:linear-gradient(to bottom, #33caa7b3 5%, #33caa7b3 100%);*/
+    background-color:#2ec0c7d9;
+}
+.txt1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.txt2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    color: #57b846;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.error input
+{
+
+    border: 2px solid #ff0000a6;
+    display: block;
+}
+.correct input
+{
+    border: 2px solid #2ec0c778;
+}
+
+.sub:hover, input[type=reset]:hover {
+ background-color:#FCDEDE;
+ align-content: center;
+ }
+.sub:active, input[type=reset]:active {
+ background-color:#FCDEDE;
+
+ box-shadow:1px 1px 1px #D83F3D inset;
+}
+.sub{
+    border: none;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 280px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: left;
+    background-color: #33caa7b3;
+}
+.btn{
+    background-color: #aeee00c2;
+    border: none;
+    color: white;
+    width: 10%;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: -15px ;
+    margin-right: 250px;
+    float: right;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.input
+{
+    vertical-align:center;
+    text-align: center;
+    display: block;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 280px;
+    border-radius: 4px;
+}
+
+.input-btn
+{
+        border: none;
+    width: 20%;
+    padding: 12px 19px;
+    margin: 8px -117px;
+    cursor: pointer;
+    border-radius: 4px;
+    /* float: right; */
+    background-color: darkgray;
+}
+
+.input-btn, .sub
+{
+    display: inline-block;
+}
+.lien
+{
+       margin-left: 540px;
+    /* margin-top: 16px; */
+    padding-left: 10px;
+}
+label
+{
+     display: block;
+    width: 50%;
+    padding: 12px 20px;
+       margin-left: 280px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+#nameError,
+#prenameError,
+#passError
+{
+   font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    margin: 8px 190px;
+    padding-left: 10px;
+   color: red;
+}
+
+#mailError
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    margin: 8px 190px;
+    padding-left: 2px;
+    color: red;
+}
+
