@@ -3,14 +3,13 @@
 	<head>
 		<title>Login </title>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	</head>
 	
 	<body>
 		<?php include "addUser.php";?>
 		<div class="container">
 			<div class="form-style-8">
-				<h2>Login to your account</h2>
+				<h2>Create a new account</h2>
 				<form method="POST" action="">
 					<?php if (count($errorInputs)){  ?>
 					<?php }   ?>
@@ -78,6 +77,7 @@
 				    	<span id="passError"></span>
 				    </div>
 				    <input class="sub" type="submit" value="Register" />
+				    <a href="index.php"><input class="input-btn" type="button" value="back" /></a>
 				</form>
 			</div>
 		</div>
