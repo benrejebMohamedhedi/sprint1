@@ -32,7 +32,7 @@ if(isset($_POST["Login"]))
     }  
     else  
     {  
-         $message = '<label>Wrong Data</label>';  
+         $message = '<label style="color: red;">Invalid inputs</label>';  
     }  
 }
 ?>
@@ -41,21 +41,17 @@ if(isset($_POST["Login"]))
 				<h2>Login to your account</h2>
 				<div class="msg"><?php echo $message; ?></div>
 				<form action = "" method = "POST">
-					<label>E-mail</label>
 				    <input class="input" type="text" name="UserMail" id="email" placeholder="Email" />
-				    <label>Password</label>
-				    <input class="input" type="password" name="UserPass" placeholder="password" id="password" />
+				     <input class="input" type="password" name="UserPass" placeholder="password" id="password" />
 				    <input class="sub" type="submit" name="Login" value="Login" />
 				    <a href="register.php"><input class="input-btn" type="button" id="link" value="Sign Up" /></a>
 				</form>
 			</div>
-			
-				 </div>
-				 <div class="form-style-8">
+			<div class="form-style-8">
 				<a  class="lien" href="mailRecup.php">Forget Password?</a> 
-				</div>
-
-			<!--fin de container -->
+			</div>
+		</div>
+		<!--fin de container -->
 		<!--<script type="text/javascript" src="popUp.js"></script>-->
 	</body>
 </html>	
