@@ -2,11 +2,17 @@
 {
     width: 50%; /* On a indiqué une largeur (obligatoire) */
     margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+    margin-top: 100px;
     border: 1px solid #888888;
     padding: 12px;
     margin-bottom: 20px;
-    background-color: #58e6cc69;
+    background-color: #fcf8e3;
     box-shadow: 3px 3px #888888;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-opacity:0,5;
+    background-image:url(fond.jpg);
+    border-radius: 10px;
 }
 
 .form-style-8{
@@ -14,43 +20,65 @@
     /*max-width: 50%;*/
   }
 
+
+.form-style-8 h3 {
+   
+    color: #03d2ab;
+font:  bold 40px/30px Georgia, serif;
+   
+    max-width: 50%;
+  
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+        margin-bottom: 75px;
+}
 .form-style-8 h2{
    
-    text-transform: uppercase;
-    font-family: 'Open Sans Condensed', arial, sans;
-    color: #000;
-    font-size: 35px;
+
+    color: #03d2ab;
+     font:  bold 40px/30px Georgia, serif;
+  
     max-width: 50%;
-    font-weight: 100;
-    padding: 20px;
+  
+    padding-top: 20px;
     text-align: center;
-    margin-left: 134px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .form-style-8 textarea{
     resize:none;
     overflow: hidden;
 }
-
+img
+{
+    width: 640px;
+    height: 125px;
+}
+a
+{
+    margin: 0 auto;
+}
 span
 {
     display: none;
     font-family: Verdana, sans-serif;
-  font-style: italic;
-    font-size: 15px;
+    font-style: italic;
+    font-size: 14px;
     margin: 8px 190px;
     padding-left: 2px;
-    color: red;
+   color: #ff0000d1;
 }
 
 
-.error input ,span
+.error input
 {
-    border: 2px solid #ff0000a6;
-    }
+    border: 2px solid #cd5c5c94;
+}
 .correct input
 {
-    border: 2px solid #2ec0c778;
+    border: 2px solid #64aa669c;
 }
 
 .form-style-8 input[type="button"]:hover
@@ -78,7 +106,8 @@ span
     cursor: pointer;
     border-radius: 4px;
     float: left;
-    background-color: #004e7b94;
+    background-color: #fffefea1;
+    color: black;
 }
 .btn{
     background-color: #aeee00c2;
@@ -95,13 +124,17 @@ span
 }
 .input
 {
-    vertical-align:center;
+        vertical-align: center;
     text-align: center;
     display: block;
-    width: 25%;
-    padding: 12px 76px;
-    margin: 33px 161px;
+    width: 40%;
+    padding: 12px 25px;
+    /* margin-bottom: 8px; */
+    /* margin: 33px 161px; */
     border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-color: #00000069;
 }
 
 .input-btn
@@ -113,7 +146,7 @@ span
     cursor: pointer;
     border-radius: 4px;
     /* float: right; */
-    background-color: darkgray;
+    background-color: #217280a6;
 }
 
 .input-btn, .sub
@@ -122,36 +155,118 @@ span
 }
 .lien
 {
-       margin-left: 248px;
+       margin-left: 245px;
     /* margin-top: 16px; */
+    color: #81f7f1;   
     padding-left: 10px;
 }
 label
-{
+{   
      
     width: 50%;
     padding: 12px 20px;
-    margin-left: 248px;
+        margin: 0px 120px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', arial, sans;
+}
+
+.msg-info
+{
+    width: 50%;
+    padding: 12px 20px;
+    margin-left: 200px;
     text-align: center;
     font-family: 'Open Sans Condensed', arial, sans;
 }
 
 
 
-
-.msg
-{
-    font-family: Verdana, sans-serif;
-  font-style: italic;
-}
 .message span
 {
     font-family: Verdana, sans-serif;
     font-style: italic;
     font-size: 18px;
-    color: #999999;
-    line-height: 3.5;
-    margin-left: 685px;
+    color: #000;
+   
     /* margin-right: -28px; */
 }
 
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+      box-shadow: 0px 0px 24px 3px #07ff0e99;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert.info {
+    background-color: #2196F3;}
+.closebtn {
+     float: right;
+    margin: 0 auto;
+    padding-right: 5px;
+    color: #ff000078;
+    font-weight: bold;
+    font-size: 22px;
+    
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.center
+{
+        text-align: center;
+    margin-left: -120px;
+    color: #a94442;
+}
+
+.alert-success strong
+{
+    color: #63aa65;
+}
+
+.closebtn , strong
+{
+  
+}
+
+h1
+{
+    text-align: center;
+    font:  bold 80px/30px Georgia, serif;
+    color: #223a5cbf;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 24px 3px rgba(255, 0, 0, 0.6);
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}
+.alert-danger strong
+{
+    color: #a94442;
+}
+
+
+#passError
+{
+
+
+}

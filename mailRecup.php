@@ -1,7 +1,3 @@
-<?php
- mail("mohamedhedi.benrejeb@esprit.tn", "Récupération de mot de passe ", "dkdkd");
-?>
-
 <!doctype html>
 <html>
 	<head>
@@ -11,12 +7,12 @@
 <body>
 		<div class="container">
 			<div class="form-style-8">
-				<h2>Get your new password</h2>
+				<h3>Get your new password</h3>
 				<?php include 'mailPass.php'; ?>
 				<form style="margin-top: -60px" action = "" method = "POST">
 					<div class="message">
 					<?php  if (isset($error)) {
-					echo'<span>'.$error.'</span>';
+					echo"<div class='alert-danger' style='text-align: center;'><span class='closebtn' onclick=this.parentElement.style.display='none'>&times;</span><strong>".$error."</strong></div>";
 					}
 					else {
 				 	echo "<br />";

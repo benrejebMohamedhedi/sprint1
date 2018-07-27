@@ -1,3 +1,26 @@
+function validateForm()
+{
+	var nameVide = document.getElementById('UserName').value,
+		prenameVide = document.getElementById('UserPrename').value,
+		mailVide = document.getElementById('UserMail').value,
+		passVide = document.getElementById('UserPass').value,
+
+		vide = document.getElementById('vide');
+	if ((nameVide == "") || (prenameVide == "") || (mailVide == "") || (passVide == "") )
+	{
+		vide.parentNode.classList.add('error');
+		vide.parentNode.classList.add('vide');
+		vide.style.display 	= "block";
+		vide.textContent 	= "les champs ne doivent pas etre vide";
+		//elt.addEventListener('keydown', removeValidateProfile(elt));
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+
 function validateName()
 {
 	var name 		= document.getElementById('UserName');
@@ -9,6 +32,7 @@ function validateName()
 	{
 		name.parentNode.classList.remove('correct');
 		name.parentNode.classList.add('error');
+		nameError.style.display = "block";
 		nameError.textContent 	= "* name should not contain a number";
 		return false;
 	}
@@ -16,6 +40,7 @@ function validateName()
 	{
 		name.parentNode.classList.remove('correct');
 		name.parentNode.classList.add('error');
+		nameError.style.display = "block"
 		nameError.textContent ="* name should not contain any number";
 		return false;
 	}
@@ -23,6 +48,7 @@ function validateName()
 	{
 		name.parentNode.classList.remove('error');
 		name.parentNode.classList.add('correct');
+		nameError.style.display = "none"
 		nameError.textContent ="";
 		return true;
 	}
@@ -39,6 +65,7 @@ function validatePrename()
 	{
 		preName.parentNode.classList.remove('correct');
 		preName.parentNode.classList.add('error');
+		prenameError.style.display = "block"
 		prenameError.textContent 	= "* Prename should not contain a number";
 		return false;
 	}
@@ -46,6 +73,7 @@ function validatePrename()
 	{
 		preName.parentNode.classList.remove('correct');
 		preName.parentNode.classList.add('error');
+		prenameError.style.display = "block"
 		nameError.textContent ="* Prename should not contain any number";
 		return false;
 	}
@@ -53,6 +81,7 @@ function validatePrename()
 	{
 		preName.parentNode.classList.remove('error');
 		preName.parentNode.classList.add('correct');
+		prenameError.style.display = "none"
 		prenameError.textContent ="";
 		return true;
 	}
@@ -68,33 +97,49 @@ function validateMail()
 	{
 		mail.parentNode.classList.remove('correct');
 		mail.parentNode.classList.add('error');
+		mailError.style.display = "block"
 		mailError.textContent 	= "* Mail should be like cou.cou@cou.cou";
 		return false;
 	}
-	else
-	{
+	else if (regexMail.test(mailOk)){
 		mail.parentNode.classList.remove('error');
 		mail.parentNode.classList.add('correct');
+		mailError.style.display = "none"
 		mailError.textContent 	= "";
 		return true;
 	}
 }
 
-function validatePass()
+var validatePass=function()
 {
-	var pass 	= document.getElementById('UserPass'),
-	 	passOk 	= document.getElementById('password');
+	var pass 		= document.getElementById('UserPass'),
+	 	passOk 		= document.getElementById('password'),
+	 	passError	= document.getElementById('passError');
 
-	if (pass.value == passOk.value) {
+	if (pass.value == passOk.value)
+	{
 		pass.parentNode.classList.remove('error');
 		pass.parentNode.classList.add('correct');
+		passOk.parentNode.classList.remove('error');
+		passOk.parentNode.classList.add('correct')
+		passError.style.display = "inline-block"
+		passError.textContent 	= "matching";
+	} 
+	else {
+		pass.parentNode.classList.remove('correct');
+		pass.parentNode.classList.add('error');
+		passOk.parentNode.classList.remove('correct');
+		passOk.parentNode.classList.add('error');
+		passError.style.display = "block"
 		passError.textContent 	= "password are not matching";
-		return true;
 	}
-	else{
-		mail.parentNode.classList.remove('correct');
-		mail.parentNode.classList.add('error');
-		mailError.textContent 	= "* Mail should be like cou.cou@cou.cou";
-		return false;
-	}
+	
+}
+
+function CloseWindow() {
+    var obj_window = window.open('', '_self');
+    obj_window.opener = window;
+    obj_window.focus();
+    opener=self;
+    self.close();
 }
