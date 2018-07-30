@@ -10,9 +10,9 @@
 		<div class="container">	
 			<div class="navbar">
 				<ul>
-				  <li><a class="active" href="#">Mon compte</a></li>
+				  <li><a class="active" href="profil.php">Mon compte</a></li>
 				  <li><a href="cvAcreer.php">Créer mon CV</a></li>
-				  <li><a href="#">Modifier mon CV</a></li>
+				  <li><a href="modifCV.php">Modifier mon CV</a></li>
 				  <li style="float:right"><a href="logout.php">Logout</a></li>
 				</ul>
 			</div>	
